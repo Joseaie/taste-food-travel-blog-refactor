@@ -1,0 +1,190 @@
+ /* *{
+    outline: 1px solid red;
+} */
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: whitesmoke;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+    background-color: white;
+    border-bottom: 2px solid #F5FFFA;
+    width: 100%;
+}
+
+#logo a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.navigation-desktop {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    display: none;
+}
+
+.nav-mobile {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    flex-direction: column;
+    top: -200px;
+    background-color: white;
+    z-index: 2;
+}
+
+.nav-mobile a {
+    padding: 10px 0px 10px 26px;
+}
+
+ .toggleMenu {
+     top: 75px;
+     /* position: fixed; */
+ }
+
+#burger-icon {
+    margin-right: 20px;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.733);
+}
+ #burger-icon:hover {
+     color: #F5FFFA;
+ }
+
+ .nav-link {
+     text-decoration: none;
+     font-family: 'Lato';
+     text-transform: uppercase;
+     color: black;
+     padding: 20px;
+ }
+
+ .nav-link:hover {
+     /* border-bottom: 2px solid green; */
+     text-decoration: underline black;
+ }
+
+  .content {
+      padding: 20px;
+  }
+
+  .content {
+      min-height: 300px;
+  }
+
+  h1 {
+    font-family: 'shabby-chic', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    color: black;
+  }
+
+  .header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+  }
+
+  /* #carousel {
+      display: flex;
+      justify-content: center;
+  } */
+
+  .carousel-item {
+    transition: none;
+  }
+
+  .carousel-caption {
+      color: black;
+  }
+
+  .of-the-week-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+  #recipe-of-the-week-img {
+      display: flex;
+      /* border-radius: 50%; */
+      max-width: 360px;
+      height: auto;
+      overflow: hidden;
+      position: relative;
+      margin: 20px;
+      border: 5px solid white;
+  }
+
+  p {
+    font-family: 'Lato', sans-serif;
+    margin-top: 30px;
+  }
+
+footer {
+    height: 120px;
+    background-color: white;
+    border-top: solid 2px #F5FFFA;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.social-img {
+    max-height: 45px;
+    max-width: 45px;
+    overflow: hidden;
+    filter: invert();
+   
+}
+
+@media only screen and (min-width: 650px) {
+    .nav-mobile {
+        display: none;
+    }
+   
+    .navigation-desktop {
+        display: flex;
+    }
+   
+    #burger-icon {
+        display: none;
+    }
+   
+    .navigation-desktop a {
+       margin: 3px;
+       color: black;
+       padding: 0 20px;  
+   }
+
+   .navigation-desktop a:hover {
+       text-decoration: underline black;
+       color: black;
+   }
+  }
+
+ @media only screen and (min-width: 980px) {
+    header {
+        justify-content: space-between;
+    } 
+
+    h1, #logo a {
+        font-size: 70px;
+    }
+}

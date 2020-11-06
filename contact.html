@@ -1,0 +1,109 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taste Contact</title>
+    <link rel="stylesheet" href="https://use.typekit.net/olp5ygy.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!--Navigation-->
+    <header>
+        <h1 id="logo"><a href="index.html">Taste</a></h1>
+        <i class="fa fa-bars" id="burger-icon"></i>
+        <nav class="navigation-desktop">
+            <div>
+                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="recipes.html">Recipes</a>
+                <a class="nav-link" href="locations.html">Locations</a>
+                <a class="nav-link" href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <nav class="nav-mobile">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="recipes.html">Recipes</a>
+        <a class="nav-link" href="locations.html">Locations</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+    </nav>
+    <!--About-->
+    <section class="about-content content">
+        <h1 class="header">About Us</h1>
+        <img class="about-img" src="assets/roll-lady.webp" alt="Lady holding tray of unbaked cinnamon rolls." />
+        <p>Combining a love for both travel and food, <span id="title">Taste</span> provides all the assistance of a
+            virtual tour
+            guide, giving you the freedom of to learn and explore countries, cities and their culture amid the current
+            pandemic, Covid-19. <br><br> Experiment and try a few of our recipes to create your ideal "holiday-at-home"
+            or learn the must-see attractions and plan ahead for your holidays after lockdown.</p>
+    </section>
+
+    <!--Contact-->
+    <section class="content">
+        <h1 class="header">Leave a message!</h1>
+        <main>
+            <div class="container-form">
+                <form class="form" action="#">
+                    <input class="form-box" type="text" placeholder="name">
+                    <input class="form-box" type="text" placeholder="email">
+                    <textarea class="form-box" rows="6" placeholder="message"></textarea>
+                    <button type="submit" id="submit">submit</button>
+                </form>
+            </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        // Declare variables that refer to the burger icon and nav menu 
+        const burgerIcon = document.getElementById('burger-icon');
+        const navMenu = document.getElementsByClassName('nav-mobile')[0];
+        const navLinks = document.getElementsByClassName('nav-link');
+        console.log(navLinks);
+
+        // apply event listener to the burger icon which listens to a click, and toggles the toggleMenu class which slides down the navmenu 
+        burgerIcon.addEventListener('click', function () {
+            navMenu.classList.toggle('toggleMenu');
+        });
+
+        //for loops- loops an action bis value is reached. e.g value= navlinks.length ... each i++ bis dann... will repeat code in curly brackets. code in brackets= when link is pressed toggle classes- apply class on first click and then remove on second usw.//
+        for (let i = 0; i < navLinks.length; i++) {
+
+            navLinks[i].addEventListener('click', function () {
+                navMenu.classList.toggle('toggleMenu');
+            })
+        }
+
+        $(window).scroll(function () {
+            $('.fade-in').each(function () {
+                var top_of_element = $(this).offset().top;
+                console.log(top_of_element);
+                var bottom_of_element = $(this).offset().top + $(this).outerHeight();
+                console.log(bottom_of_element);
+                var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
+                console.log(bottom_of_screen);
+                var top_of_screen = $(window).scrollTop();
+
+                if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element) && !$(this).hasClass('is-visible')) {
+                    $(this).addClass('is-visible');
+                }
+            });
+        });
+
+    </script>
+</body>
+<footer>
+    <div class="socials">
+        <p class="socials">copyright &copy; 2020</p>
+        <a href="https://www.linkedin.com/" target="blank"><img class="social-img" id="linkedin"
+                src="assets/white-linkedin.png"></a>
+        <a href="https://www.instagram.com/" target="blank"><img class="social-img" id="insta"
+                src="assets/white-insta.png"></a>
+    </div>
+</footer>
+
+</html>

@@ -1,0 +1,149 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taste</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.typekit.net/olp5ygy.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/europe-recipe.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+
+<body>
+    <!--Navigation-->
+    <header>
+        <h1 id="logo"><a href="index.html">Taste</a></h1>
+        <i class="fa fa-bars" id="burger-icon"></i>
+        <nav class="navigation-desktop">
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="recipes.html">Recipes</a>
+            <a class="nav-link" href="locations.html">Locations</a>
+            <a class="nav-link" href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <nav class="nav-mobile">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="recipes.html">Recipes</a>
+        <a class="nav-link" href="locations.html">Locations</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+    </nav>
+
+    <section class="content">
+    <h1 class="header">Example Recipe Page</h1>
+    
+        <div class="recipe">
+            <div class="recipe-img">
+                <div class="card" style="width: 20rem;">
+                    <img src="./assets/flower-cake.jpeg" class="card-img-top" alt="Italian Tiramisu">
+                </div>
+            </div>
+            <div class="card" style="width: 20rem;">
+                <div class="recipe-ingredients">
+                    <div class="card-header">
+                        INGREDIENTS
+                        <span class="serving"><small>6-8 Servings</small></span>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">568ml double cream</li>
+                        <li class="list-group-item">250g mascarpone</li>
+                        <li class="list-group-item">2 tbsp of dark rum or marsala</li>
+                        <li class="list-group-item">4 large eggs, separated</li>
+                        <li class="list-group-item">75g caster sugar</li>
+                        <li class="list-group-item">300ml coffee, preferably espresso </li>
+                        <li class="list-group-item">200g pack of sponge fingers</li>
+                        <li class="list-group-item">Cocoa powder, to dust</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="recipe-method">
+                <div class="card" style="width: 40rem;">
+                    <div class="card-header">
+                        METHOD <span class="time"><small>
+                                Prep time: 30 mins | Chill: min. 4 hours
+                            </small></span>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">In a large bowl, whisk together the egg yolks and sugar until pale
+                            and mix in the mascarpone.</li>
+                        <li class="list-group-item">In a separate bowl, whip the double cream until soft peaks form,
+                            then fold it into the eggs and sugar mixture</li>
+                        <li class="list-group-item">In another bowl, whip the egg whites until again soft peaks form and
+                            fold this into the mixture.</li>
+                        <li class="list-group-item">Stir your rum or marsala in the coffee and pour into a shallow bowl.
+                        </li>
+                        <li class="list-group-item">Dip in the sponge fingers and soak them in the bowl.</li>
+                        <li class="list-group-item">Once soaked, place in your dish and spoon roughly have of your
+                            mixture on top.</li>
+                        <li class="list-group-item">Soak and layer the sponge fingers as you go to ensure they do not
+                            become too soggy.</li>
+                        <li class="list-group-item">Build your layers of biscuit and creamy mixture, finishing off with
+                            the creamy layer on top.</li>
+                        <li class="list-group-item">Cover and leave to chill in the fridge for a few hours or overnight.
+                        </li>
+                        <li class="list-group-item">Before serving, dust with cocoa powder and enjoy!</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        // Declare variables that refer to the burger icon and nav menu 
+        const burgerIcon = document.getElementById('burger-icon');
+        const navMenu = document.getElementsByClassName('nav-mobile')[0];
+        const navLinks = document.getElementsByClassName('nav-link');
+        console.log(navLinks);
+
+        // apply event listener to the burger icon which listens to a click, and toggles the toggleMenu class which slides down the navmenu 
+        burgerIcon.addEventListener('click', function () {
+            navMenu.classList.toggle('toggleMenu');
+        });
+
+        //for loops- loops an action bis value is reached. e.g value= navlinks.length ... each i++ bis dann... will repeat code in curly brackets. code in brackets= when link is pressed toggle classes- apply class on first click and then remove on second usw.//
+        for (let i = 0; i < navLinks.length; i++) {
+
+            navLinks[i].addEventListener('click', function () {
+                navMenu.classList.toggle('toggleMenu');
+            })
+        }
+
+        $(window).scroll(function () {
+            $('.fade-in').each(function () {
+                var top_of_element = $(this).offset().top;
+                console.log(top_of_element);
+                var bottom_of_element = $(this).offset().top + $(this).outerHeight();
+                console.log(bottom_of_element);
+                var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
+                console.log(bottom_of_screen);
+                var top_of_screen = $(window).scrollTop();
+
+                if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element) && !$(this).hasClass('is-visible')) {
+                    $(this).addClass('is-visible');
+                }
+            });
+        });
+
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+
+<footer>
+    <div class="socials">
+        <p class="socials">copyright &copy; 2020</p>
+        <a href="https://www.linkedin.com/" target="blank"><img class="social-img" id="linkedin"
+                src="assets/white-linkedin.png"></a>
+        <a href="https://www.instagram.com/" target="blank"><img class="social-img" id="insta"
+                src="assets/white-insta.png"></a>
+    </div>
+</footer>
+
+</html>
