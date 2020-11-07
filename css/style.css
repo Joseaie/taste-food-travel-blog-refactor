@@ -165,6 +165,7 @@ footer {
 .header {
     margin: 20px;
 }
+
 @media only screen and (min-width: 650px) {
     .nav-mobile {
         display: none;
@@ -197,5 +198,25 @@ footer {
 
     h1, #logo a {
         font-size: 70px;
+    }
+
+    #carousel{
+        height: 80vh;
+    }
+
+    .carousel {
+        height: 100%;
+    }
+
+    .carousel-inner {
+        height: 100%;
+    }
+
+    .carousel-caption {
+        bottom: 130px;
+    }
+
+    .carousel-item {
+        height: 100%;
     }
 }
