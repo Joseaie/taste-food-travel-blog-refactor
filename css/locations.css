@@ -1,11 +1,4 @@
-.region-title {
-    font-family: 'Lato';
-     text-transform: uppercase;
-     color: black;
-     margin: 20px;
-     list-style: none;
-}
- 
-.header {
-    margin: 20px;
+.card-img-top {
+    max-height: 275px;
+    height: 100%;
 }

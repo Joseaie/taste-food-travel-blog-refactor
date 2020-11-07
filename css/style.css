@@ -154,6 +154,17 @@ footer {
    
 }
 
+.region-title {
+    font-family: 'Lato';
+     text-transform: uppercase;
+     color: black;
+     margin: 20px;
+     list-style: none;
+}
+ 
+.header {
+    margin: 20px;
+}
 @media only screen and (min-width: 650px) {
     .nav-mobile {
         display: none;
