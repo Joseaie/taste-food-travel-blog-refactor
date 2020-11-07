@@ -43,15 +43,15 @@
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <a href="#"><img src="assets/flower-cake.jpeg" class="d-block w-100" alt="Layered cake with a flower beside it."></a>
+          <a href="#"><img src="assets/flower-cake.jpeg" class="d-block w-100"
+              alt="Layered cake with a flower beside it."></a>
           <div class="carousel-caption d-none d-md-block">
             <h5>Lorem</h5>
             <p class="caption">Lorem, ipsum dolor.</p>
           </div>
         </div>
         <div class="carousel-item">
-          <a href="#"><img src="assets/rice-lunch.jpeg" class="d-block w-100"
-              alt="Great Wall of China"></a>
+          <a href="#"><img src="assets/rice-lunch.jpeg" class="d-block w-100" alt="Great Wall of China"></a>
           <div class="carousel-caption d-none d-md-block">
             <h5>Lorem</h5>
             <p class="caption">Lorem, ipsum dolor.</p>
@@ -65,7 +65,7 @@
             <h5>Lorem</h5>
             <p class="caption">Lorem, ipsum dolor.</p>
           </div>
-        </div>
+        </div> -->
         <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
@@ -95,18 +95,18 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script>
-    // Declare variables that refer to the burger icon and nav menu 
+    
     const burgerIcon = document.getElementById('burger-icon');
     const navMenu = document.getElementsByClassName('nav-mobile')[0];
     const navLinks = document.getElementsByClassName('nav-link');
     console.log(navLinks);
 
-    // apply event listener to the burger icon which listens to a click, and toggles the toggleMenu class which slides down the navmenu 
+  
     burgerIcon.addEventListener('click', function () {
       navMenu.classList.toggle('toggleMenu');
     });
 
-    //for loops- loops an action bis value is reached. e.g value= navlinks.length ... each i++ bis dann... will repeat code in curly brackets. code in brackets= when link is pressed toggle classes- apply class on first click and then remove on second usw.//
+
     for (let i = 0; i < navLinks.length; i++) {
 
       navLinks[i].addEventListener('click', function () {
@@ -138,11 +138,11 @@
 
 <footer>
   <div class="socials">
-      <p class="socials">copyright &copy; 2020</p>
-      <a href="https://www.linkedin.com/" target="blank"><img class="social-img" id="linkedin"
-              src="assets/white-linkedin.png"></a>
-      <a href="https://www.instagram.com/" target="blank"><img class="social-img" id="insta"
-              src="assets/white-insta.png"></a>
+    <p class="socials">copyright &copy; 2020</p>
+    <a href="https://www.linkedin.com/" target="blank"><img class="social-img" id="linkedin"
+        src="assets/white-linkedin.png"></a>
+    <a href="https://www.instagram.com/" target="blank"><img class="social-img" id="insta"
+        src="assets/white-insta.png"></a>
   </div>
 </footer>
 
