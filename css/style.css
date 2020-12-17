@@ -60,7 +60,7 @@ header {
     color: rgba(0, 0, 0, 0.733);
 }
  #burger-icon:hover {
-     color: #F5FFFA;
+     color: lightgray;
  }
 
  .nav-link {
@@ -74,6 +74,7 @@ header {
  .nav-link:hover {
      /* border-bottom: 2px solid green; */
      text-decoration: underline black;
+     color: black;
  }
 
   .content {
