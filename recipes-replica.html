@@ -1,0 +1,176 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Replica</title>
+    <link rel="stylesheet" href="https://use.typekit.net/olp5ygy.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/recipe-replica.css">
+</head>
+
+<body>
+    <!--Navigation-->
+    <header>
+        <h1 id="logo"><a href="index.html">Taste</a></h1>
+        <i class="fa fa-bars" id="burger-icon"></i>
+        <nav class="navigation-desktop">
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="recipes-replica.html">Recipes</a>
+            <a class="nav-link" href="locations-replica.html">Locations</a>
+            <a class="nav-link" href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <nav class="nav-mobile">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="recipes-replica.html">Recipes</a>
+        <a class="nav-link" href="locations-replica.html">Locations</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+    </nav>
+
+    <!--Recipes-->
+    <section class="content">
+        <h1 class="header">Recipes</h1>
+        <div>
+            <div class="continent-container">
+                <h3 class="section-header">Europe</h3>
+                <div class="card-deck">
+                    <div class="card">
+                        <a class="stretched-link" href="example-recipe-replica.html">
+                        <img src="assets/flower-cake.jpeg" alt="Layered cake with flower beside it.">
+                        <div class="card-desc">
+                            <h5>Lorem</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero vero voluptates
+                                perspiciatis magnam deserunt consequuntur ea tempora.</p>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <img src="assets/lemon-cocktail.jpg" alt="Lemon cocktail.">
+                        <div class="card-desc">
+                            <h5>Lorem</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero vero voluptates
+                                perspiciatis magnam deserunt consequuntur ea tempora.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="assets/macarons.jpeg" alt="Lemon cocktail.">
+                        <div class="card-desc">
+                            <h5>Lorem</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero vero voluptates
+                                perspiciatis magnam deserunt consequuntur ea tempora.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="continent-container">
+                <h3 class="section-header">Africa</h3>
+                <div class="card-deck">
+                    <div class="card">
+                        <img src="assets/spiced-cheese.jpg" alt="Layered cake with flower beside it.">
+                        <div class="card-desc">
+                            <h5>Lorem</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero vero voluptates
+                                perspiciatis magnam deserunt consequuntur ea tempora.</p>
+                        </div>
+                        <a href="#"></a>
+                    </div>
+                    <div class="card">
+                        <img src="assets/avocado-toast.jpeg" alt="Lemon cocktail.">
+                        <div class="card-desc">
+                            <h5>Lorem</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero vero voluptates
+                                perspiciatis magnam deserunt consequuntur ea tempora.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="assets/courgette-salad.jpeg" alt="Lemon cocktail.">
+                        <div class="card-desc">
+                            <h5>Lorem</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero vero voluptates
+                                perspiciatis magnam deserunt consequuntur ea tempora.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="continent-container">
+                <h3 class="section-header">Asia</h3>
+                <div class="card-deck">
+                    <div class="card">
+                        <img src="assets/rice-lunch.jpeg" alt="Layered cake with flower beside it.">
+                        <div class="card-desc">
+                            <h5>Lorem</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero vero voluptates
+                                perspiciatis magnam deserunt consequuntur ea tempora.</p>
+                        </div>
+                        <a href="#"></a>
+                    </div>
+                    <div class="card">
+                        <img src="assets/vegetable-noodles.jpeg" alt="Lemon cocktail.">
+                        <div class="card-desc">
+                            <h5>Lorem</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero vero voluptates
+                                perspiciatis magnam deserunt consequuntur ea tempora.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-desc">
+                            <h5>Come back later!</h5>
+                            <p>More recipes coming soon.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <script>
+        const burgerIcon = document.getElementById('burger-icon');
+        const navMenu = document.getElementsByClassName('nav-mobile')[0];
+        const navLinks = document.getElementsByClassName('nav-link');
+        console.log(navLinks);
+
+        burgerIcon.addEventListener('click', function () {
+            navMenu.classList.toggle('toggleMenu');
+        });
+
+        for (let i = 0; i < navLinks.length; i++) {
+
+            navLinks[i].addEventListener('click', function () {
+                navMenu.classList.toggle('toggleMenu');
+            })
+        }
+
+        $(window).scroll(function () {
+            $('.fade-in').each(function () {
+                var top_of_element = $(this).offset().top;
+                console.log(top_of_element);
+                var bottom_of_element = $(this).offset().top + $(this).outerHeight();
+                console.log(bottom_of_element);
+                var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
+                console.log(bottom_of_screen);
+                var top_of_screen = $(window).scrollTop();
+
+                if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element) && !$(this).hasClass('is-visible')) {
+                    $(this).addClass('is-visible');
+                }
+            });
+        });
+
+    </script>
+</body>
+<footer>
+    <div class="socials">
+        <p class="socials">copyright &copy; 2020</p>
+        <a href="https://www.linkedin.com/" target="blank"><img class="social-img" id="linkedin"
+                src="assets/white-linkedin.png"></a>
+        <a href="https://www.instagram.com/" target="blank"><img class="social-img" id="insta"
+                src="assets/white-insta.png"></a>
+    </div>
+</footer>
+
+</html>
