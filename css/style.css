@@ -72,7 +72,6 @@ header {
  }
 
  .nav-link:hover {
-     /* border-bottom: 2px solid green; */
      text-decoration: underline black;
      color: black;
  }
@@ -122,7 +121,6 @@ header {
 
   #recipe-of-the-week-img {
       display: flex;
-      /* border-radius: 50%; */
       max-width: 360px;
       height: auto;
       overflow: hidden;
@@ -132,8 +130,13 @@ header {
   }
 
   p {
-    font-family: 'Lato', sans-serif;
     margin-top: 30px;
+  }
+
+  p, h3, li {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
   }
 
 footer {
@@ -190,6 +193,7 @@ footer {
        text-decoration: underline black;
        color: black;
    }
+   
    .carousel-caption {
         background-color: rgba(245, 245, 245, 0.637);
         padding: 0;
@@ -233,4 +237,10 @@ footer {
         top: -17%;
         height: 100%;
     }
+
+    #week-caption {
+        text-align: center;
+        width: 60%;
+    }
+
 }
