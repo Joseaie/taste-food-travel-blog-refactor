@@ -106,7 +106,7 @@ header {
   } */
 
   .carousel-item {
-    transition: none;
+    transition: 1s;
   }
 
   .carousel-caption {
