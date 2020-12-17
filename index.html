@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Taste</title>
+  <link rel="icon" type="png" href="https://www.templatetrove.com/images/Large-Monogram-Letter-T-1-PNG.png">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.typekit.net/olp5ygy.css">
@@ -20,16 +21,16 @@
     <i class="fa fa-bars" id="burger-icon"></i>
     <nav class="navigation-desktop">
       <a class="nav-link" href="index.html">Home</a>
-      <a class="nav-link" href="recipes.html">Recipes</a>
-      <a class="nav-link" href="locations.html">Locations</a>
+      <a class="nav-link" href="recipes-replica.html">Recipes</a>
+      <a class="nav-link" href="locations-replica.html">Locations</a>
       <a class="nav-link" href="contact.html">Contact</a>
     </nav>
   </header>
 
   <nav class="nav-mobile">
     <a class="nav-link" href="index.html">Home</a>
-    <a class="nav-link" href="recipes.html">Recipes</a>
-    <a class="nav-link" href="locations.html">Locations</a>
+    <a class="nav-link" href="recipes-replica.html">Recipes</a>
+    <a class="nav-link" href="locations-replica.html">Locations</a>
     <a class="nav-link" href="contact.html">Contact</a>
   </nav>
 
@@ -65,7 +66,7 @@
             <h5>Lorem</h5>
             <p class="caption">Lorem, ipsum dolor.</p>
           </div>
-        </div> -->
+        </div>
         <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
@@ -83,25 +84,29 @@
     <div class="of-the-week-content">
       <h1 class="header">Recipe of the week</h1>
       <img id="recipe-of-the-week-img" src="assets/macarons.jpeg">
-      <h5>Lorem</h5>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus, excepturi. Eos blanditiis praesentium
-        error deserunt mollitia adipisci nulla a veritatis! Corrupti ad adipisci ipsa ut quaerat temporibus quos ratione
-        corporis quibusdam, maiores, maxime, illo cum enim! Ad aut asperiores dolorum, deserunt voluptas, maiores
-        numquam dicta veniam cupiditate dolor ullam architecto animi neque placeat sapiente aliquid. Soluta, hic? Neque
-        inventore deserunt a, vero aliquid iure velit?</p>
+      <div id="week-caption">
+        <h5>Lorem</h5>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus, excepturi. Eos blanditiis praesentium
+          error deserunt mollitia adipisci nulla a veritatis! Corrupti ad adipisci ipsa ut quaerat temporibus quos
+          ratione
+          corporis quibusdam, maiores, maxime, illo cum enim! Ad aut asperiores dolorum, deserunt voluptas, maiores
+          numquam dicta veniam cupiditate dolor ullam architecto animi neque placeat sapiente aliquid. Soluta, hic?
+          Neque
+          inventore deserunt a, vero aliquid iure velit?</p>
+      </div>
     </div>
 
   </section>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script>
-    
+
     const burgerIcon = document.getElementById('burger-icon');
     const navMenu = document.getElementsByClassName('nav-mobile')[0];
     const navLinks = document.getElementsByClassName('nav-link');
     console.log(navLinks);
 
-  
+
     burgerIcon.addEventListener('click', function () {
       navMenu.classList.toggle('toggleMenu');
     });
