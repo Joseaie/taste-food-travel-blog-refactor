@@ -28,8 +28,8 @@
 
     <nav class="nav-mobile">
         <a class="nav-link" href="index.html">Home</a>
-        <a class="nav-link" href="recipes.html">Recipes</a>
-        <a class="nav-link" href="locations.html">Locations</a>
+        <a class="nav-link" href="recipes-replica.html">Recipes</a>
+        <a class="nav-link" href="locations-replica.html">Locations</a>
         <a class="nav-link" href="contact.html">Contact</a>
     </nav>
     <!--About-->
@@ -59,18 +59,15 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
-        // Declare variables that refer to the burger icon and nav menu 
         const burgerIcon = document.getElementById('burger-icon');
         const navMenu = document.getElementsByClassName('nav-mobile')[0];
         const navLinks = document.getElementsByClassName('nav-link');
         console.log(navLinks);
 
-        // apply event listener to the burger icon which listens to a click, and toggles the toggleMenu class which slides down the navmenu 
         burgerIcon.addEventListener('click', function () {
             navMenu.classList.toggle('toggleMenu');
         });
 
-        //for loops- loops an action bis value is reached. e.g value= navlinks.length ... each i++ bis dann... will repeat code in curly brackets. code in brackets= when link is pressed toggle classes- apply class on first click and then remove on second usw.//
         for (let i = 0; i < navLinks.length; i++) {
 
             navLinks[i].addEventListener('click', function () {
