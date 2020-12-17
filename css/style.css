@@ -190,6 +190,17 @@ footer {
        text-decoration: underline black;
        color: black;
    }
+   .carousel-caption {
+        background-color: rgba(245, 245, 245, 0.637);
+        padding: 0;
+        width: 40%;
+        left: 30%;
+        bottom: 10%;
+        border-radius: 1.2%;
+   }
+   p.caption {
+    margin: 0 0 2px 0;
+   }
   }
 
  @media only screen and (min-width: 980px) {
@@ -202,7 +213,7 @@ footer {
     }
 
     #carousel{
-        height: 80vh;
+        height: 95vh;
     }
 
     .carousel {
@@ -214,10 +225,12 @@ footer {
     }
 
     .carousel-caption {
-        bottom: 130px;
+        bottom: -8%;
+        padding: 2px 0 2px 0;
     }
 
     .carousel-item {
+        top: -17%;
         height: 100%;
     }
 }
