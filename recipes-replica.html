@@ -42,16 +42,16 @@
                 <div class="card-deck">
                     <div class="card">
                         <a class="stretched-link" href="example-recipe-replica.html">
-                        <img src="assets/flower-cake.jpeg" alt="Layered cake with flower beside it.">
-                        <div class="card-desc">
-                            <h5>Lorem</h5>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero vero voluptates
-                                perspiciatis magnam deserunt consequuntur ea tempora.</p>
-                        </div>
+                            <img src="assets/flower-cake.jpeg" alt="Layered cake with flower beside it.">
+                            <div class="card-desc">
+                                <h5>Lorem</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero vero voluptates
+                                    perspiciatis magnam deserunt consequuntur ea tempora.</p>
+                            </div>
                         </a>
                     </div>
                     <div class="card">
-                        <img src="assets/lemon-cocktail.jpg" alt="Lemon cocktail.">
+                        <img src="assets/tart.jpeg" alt="Tart with garnishes.">
                         <div class="card-desc">
                             <h5>Lorem</h5>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero vero voluptates
@@ -59,7 +59,7 @@
                         </div>
                     </div>
                     <div class="card">
-                        <img src="assets/macarons.jpeg" alt="Lemon cocktail.">
+                        <img src="assets/lemon-cocktail.jpg" alt="Lemon cocktail.">
                         <div class="card-desc">
                             <h5>Lorem</h5>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero vero voluptates
@@ -72,7 +72,7 @@
                 <h3 class="section-header">Africa</h3>
                 <div class="card-deck">
                     <div class="card">
-                        <img src="assets/spiced-cheese.jpg" alt="Layered cake with flower beside it.">
+                        <img src="assets/spiced-cheese.jpg" alt="Spiced cheese.">
                         <div class="card-desc">
                             <h5>Lorem</h5>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero vero voluptates
@@ -81,7 +81,7 @@
                         <a href="#"></a>
                     </div>
                     <div class="card">
-                        <img src="assets/avocado-toast.jpeg" alt="Lemon cocktail.">
+                        <img src="assets/avocado-toast.jpeg" alt="Toast with avocado.">
                         <div class="card-desc">
                             <h5>Lorem</h5>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero vero voluptates
@@ -89,7 +89,7 @@
                         </div>
                     </div>
                     <div class="card">
-                        <img src="assets/courgette-salad.jpeg" alt="Lemon cocktail.">
+                        <img src="assets/courgette-salad.jpeg" alt="Courgette salad.">
                         <div class="card-desc">
                             <h5>Lorem</h5>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero vero voluptates
@@ -102,7 +102,7 @@
                 <h3 class="section-header">Asia</h3>
                 <div class="card-deck">
                     <div class="card">
-                        <img src="assets/rice-lunch.jpeg" alt="Layered cake with flower beside it.">
+                        <img src="assets/rice-lunch.jpeg" alt="Fried rice with vegetables.">
                         <div class="card-desc">
                             <h5>Lorem</h5>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero vero voluptates
@@ -111,7 +111,7 @@
                         <a href="#"></a>
                     </div>
                     <div class="card">
-                        <img src="assets/vegetable-noodles.jpeg" alt="Lemon cocktail.">
+                        <img src="assets/vegetable-noodles.jpeg" alt="Noodles with vegetables.">
                         <div class="card-desc">
                             <h5>Lorem</h5>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero vero voluptates
@@ -146,23 +146,6 @@
                 navMenu.classList.toggle('toggleMenu');
             })
         }
-
-        $(window).scroll(function () {
-            $('.fade-in').each(function () {
-                var top_of_element = $(this).offset().top;
-                console.log(top_of_element);
-                var bottom_of_element = $(this).offset().top + $(this).outerHeight();
-                console.log(bottom_of_element);
-                var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
-                console.log(bottom_of_screen);
-                var top_of_screen = $(window).scrollTop();
-
-                if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element) && !$(this).hasClass('is-visible')) {
-                    $(this).addClass('is-visible');
-                }
-            });
-        });
-
     </script>
 </body>
 <footer>
