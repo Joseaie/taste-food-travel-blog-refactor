@@ -26,6 +26,10 @@ header {
     margin-left: 20px;
     text-decoration: none;
     color: black;
+    font-size: 30px;
+    font-family: 'MuseoModerno', cursive;
+    text-transform: lowercase;
+    letter-spacing: 6px;
 }
 
 .navigation-desktop {
@@ -51,7 +55,6 @@ header {
 
  .toggleMenu {
      top: 75px;
-     /* position: fixed; */
  }
 
 #burger-icon {
@@ -66,7 +69,8 @@ header {
  .nav-link {
      text-decoration: none;
      font-family: 'Lato';
-     text-transform: uppercase;
+     text-transform: lowercase;
+     letter-spacing: 1px;
      color: black;
      padding: 20px;
  }
@@ -85,11 +89,13 @@ header {
   }
 
   h1 {
-    font-family: 'shabby-chic', cursive;
     font-weight: 400;
     font-style: normal;
     font-size: 50px;
     color: black;
+    font-size: 25px;
+    font-family: 'MuseoModerno', cursive;
+    
   }
 
   .header {
@@ -98,11 +104,6 @@ header {
       align-items: center;
       text-align: center;
   }
-
-  /* #carousel {
-      display: flex;
-      justify-content: center;
-  } */
 
   .carousel-item {
     transition: 1s;
@@ -212,8 +213,16 @@ footer {
         justify-content: space-between;
     } 
 
-    h1, #logo a {
-        font-size: 70px;
+    #logo a {
+        font-size: 38px;
+    }
+    
+    .nav-link {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 35px;
     }
 
     #carousel{
