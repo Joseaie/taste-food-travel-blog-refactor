@@ -9,6 +9,8 @@
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.typekit.net/olp5ygy.css">
   <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/contact.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -83,7 +85,7 @@
   <section class="content">
     <div class="of-the-week-content">
       <h1 class="header">Recipe of the week</h1>
-      <img id="recipe-of-the-week-img" src="assets/macarons.jpeg">
+      <img id="recipe-of-the-week-img" src="assets/tart.jpeg">
       <div id="week-caption">
         <h5>Lorem</h5>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus, excepturi. Eos blanditiis praesentium
@@ -118,23 +120,6 @@
         navMenu.classList.toggle('toggleMenu');
       })
     }
-
-    $(window).scroll(function () {
-      $('.fade-in').each(function () {
-        var top_of_element = $(this).offset().top;
-        console.log(top_of_element);
-        var bottom_of_element = $(this).offset().top + $(this).outerHeight();
-        console.log(bottom_of_element);
-        var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
-        console.log(bottom_of_screen);
-        var top_of_screen = $(window).scrollTop();
-
-        if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element) && !$(this).hasClass('is-visible')) {
-          $(this).addClass('is-visible');
-        }
-      });
-    });
-
   </script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"

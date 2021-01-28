@@ -6,6 +6,8 @@
     <title>Taste</title>
     <link rel="stylesheet" href="https://use.typekit.net/olp5ygy.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/example-recipe-replica.css">
@@ -37,7 +39,7 @@
             <div class="img-ingred-container">
                 <img src="assets/flower-cake.jpeg" alt="Layered cake with flower beside it.">
                 <div class="ingred-card">
-                    <div .class="card-content">
+                    <div class="card-content">
                         <div class="card-header">
                             <h3>Ingredients <small>6-8 servings<small></small></h3>
                         </div>
@@ -57,7 +59,8 @@
                     <h3>Method <small>Prep time: 30 mins | Chill: min. 4 hours</small></h3>
                 </div>
                 <ol class="method-list">
-                    <li class="first-list-item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis voluptates placeat suscipit
+                    <li class="first-list-item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis
+                        voluptates placeat suscipit
                         inventore animi provident.</li>
                     <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis voluptates placeat suscipit
                         inventore animi provident.</li>
@@ -91,23 +94,6 @@
                 navMenu.classList.toggle('toggleMenu');
             })
         }
-
-        $(window).scroll(function () {
-            $('.fade-in').each(function () {
-                var top_of_element = $(this).offset().top;
-                console.log(top_of_element);
-                var bottom_of_element = $(this).offset().top + $(this).outerHeight();
-                console.log(bottom_of_element);
-                var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
-                console.log(bottom_of_screen);
-                var top_of_screen = $(window).scrollTop();
-
-                if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element) && !$(this).hasClass('is-visible')) {
-                    $(this).addClass('is-visible');
-                }
-            });
-        });
-
     </script>
 </body>
 

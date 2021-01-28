@@ -6,6 +6,8 @@
     <title>Taste Contact</title>
     <link rel="stylesheet" href="https://use.typekit.net/olp5ygy.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -74,23 +76,6 @@
                 navMenu.classList.toggle('toggleMenu');
             })
         }
-
-        $(window).scroll(function () {
-            $('.fade-in').each(function () {
-                var top_of_element = $(this).offset().top;
-                console.log(top_of_element);
-                var bottom_of_element = $(this).offset().top + $(this).outerHeight();
-                console.log(bottom_of_element);
-                var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
-                console.log(bottom_of_screen);
-                var top_of_screen = $(window).scrollTop();
-
-                if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element) && !$(this).hasClass('is-visible')) {
-                    $(this).addClass('is-visible');
-                }
-            });
-        });
-
     </script>
 </body>
 <footer>
